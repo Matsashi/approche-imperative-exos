@@ -29,6 +29,9 @@ public class Ex01_AffichageIdentite {
 		for (int i=1; i<=10; i++) {
 			Resultat.log("Coucou");
 		}
+		for (int i=1; i<=10; i++) {
+			Resultat.log("Un texte quelconque");
+		}
 	}
 
 }

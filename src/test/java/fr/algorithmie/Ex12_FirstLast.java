@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import outils.Exercice;
 import outils.ExerciceRunner;
 import outils.Question;
+import outils.Resultat;
 
 /**
  * Ne modifiez ni les noms des classes, ni les noms des méthodes. Utilisez
@@ -36,6 +37,17 @@ public class Ex12_FirstLast {
 		// o elle vaut false dans les autres cas
 
 		// TODO LOGUEZ la valeur obtenue pour chacun des tableaux tab1 à tab4
+		
+		boolean tabLastSame;
+		int[][] arrayOfArray = {tab1, tab2, tab3, tab4};
+		for (int i=0; i<=arrayOfArray.length-1; i++) {
+			if((arrayOfArray[i].length>=1) && ((arrayOfArray[i][arrayOfArray[i].length-1]) == (arrayOfArray[i][0]))) {
+				tabLastSame = true;
+			}else {
+				tabLastSame = false;
+			}
+			Resultat.log(tabLastSame);
+		}
 
 	}
 
